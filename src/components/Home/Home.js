@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { Row, Col } from 'react-bootstrap'
+import Fade from 'react-reveal/Fade'
 import hero from '../../assets/images/hero.jpg'
 import Hero from './Hero'
 
@@ -29,7 +30,9 @@ const Home = () => {
                         </Col>
                     </Row>
                 </Container>
-                <Hero />
+                <Fade bottom>
+                    <Hero />
+                </Fade>
             </Container>
         </section>
     )
