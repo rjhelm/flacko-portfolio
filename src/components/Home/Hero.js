@@ -1,19 +1,24 @@
 import React from "react";
 import { Container } from "react-bootstrap/Container";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Card, CardGroup } from "react-bootstrap";
 
 const Hero = () => {
     return (
         <Container className="hero-section">
             <Row>
-                <Col className="md=4 hero-content">
-                    
-                </Col>
-                <Col className="md=4 hero-content">
-                    
-                </Col>
-                <Col className="md=4 hero-conttent">
+                <Col className="hero-content">
+                    <CardGroup className="hero-card">
+                        <Card>
+                            <Card.Img variant="top" />
+                            <Card.Body>
+                                <Card.Title>
+                                </Card.Title>
+                                <Card.Text>
 
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </CardGroup>
                 </Col>
             </Row>
         </Container>

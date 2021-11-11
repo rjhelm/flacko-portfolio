@@ -2,40 +2,47 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { Row, Col } from 'react-bootstrap'
-import Fade from 'react-reveal/Fade'
+import Bounce from 'react-reveal/Bounce'
 import hero from '../../assets/images/hero.jpg'
 import Hero from './Hero'
+import Particle from '../../helpers/Particle';
 
 const Home = () => {
     return (
         <section>
             <Container fluid className="home-section" id="home">
-                <Container className="home-section">
+                <Particle />
+                <Image src={hero} fluid />
+                <Container className="home-content">
                     <Row>
-                        <Col className="md=6 home-text">
-                            <h1 className="home-header">
-                                <strong className="highlight"></strong>
-                            </h1>
-                            <h2 className="home-subheader">
-                                <strong className="highlight"></strong>
-                            </h2>
-                            <div>
-                                <p className="home-content">
+                        <Bounce right clear>
+                            <Col md={6} className="home-header">
+                                <h1 className="heading">
+                                    Full-Stack <strong className="highlight">Web Developer</strong>
+                                </h1>
+                                <h2 className="heading-name">
+                                    <strong className="highlight">Ryan Helm</strong>
+                                </h2>
+                                <div>
+                                    <p className="home-content">
 
-                                </p>
-                            </div>
-                        </Col>
-                        <Col className="md=4 home-image">
-                            <Image src={hero} fluid />
-                        </Col>
+                                    </p>
+                                </div>
+                            </Col>
+                        </Bounce>
+                        <Bounce left clear>
+                            <Col md={6}>
+                                
+                            </Col>
+                        </Bounce>
                     </Row>
                 </Container>
-                <Fade bottom>
+                <Bounce bottom big>
                     <Hero />
-                </Fade>
+                </Bounce>
             </Container>
         </section>
-    )
+    );
 }
 
-export default Home
+export default Home;

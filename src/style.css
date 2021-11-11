@@ -157,7 +157,7 @@ html {
 
   /* Home Styles */
 
-/* #tsparticles {
+#tsparticles {
     position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,7 +171,7 @@ html {
     padding-bottom: 35px;
     padding-top: 30px;
     background-position: top center;
-    background-image: var(--image-gradient), url(./Assets/home-bg.png);
+    background-size: cover;
   }
   
   .home-header {
@@ -371,7 +371,7 @@ html {
 
 /* Footer Styles */
 
-.footer {
+footer {
     bottom: 0 !important;
     padding-top: 10px;
     padding-bottom: 7px;
@@ -409,4 +409,53 @@ html {
     .footer-body {
       text-align: center;
     }
+  }
+
+  /* Preloader Styles */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color:rgb(154, 223, 255);
+    background-image: url(./assets/images/load.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    --imp-text-color: rgba(5, 5, 5, 0.63);
+  }
+  
+  #preloader-none {
+    opacity: 0;
+  }
+  
+  #no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* Scrollbar Styles */
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Scrollbar Track Styles */
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Scrollbar Thumb Styles */
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: gold;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: gold;
+    border-radius: 12px;
   }
