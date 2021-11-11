@@ -1,16 +1,19 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
+import "./style.css";
+
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
-      <div>
-
-      </div>
+        {/* <Home /> || Hero section and social links with brief explanation about me */}
+        {/* <About /> || More detailed overview of myself and who I am */}
+        {/* <Projects /> || Display of my most technical or efficient projects with links to code and deploymnent */}
+        {/* <Resume /> || Display of my experience and programming knowledge */}
       <Footer />
-    </>
+    </div>
   );
 }
 

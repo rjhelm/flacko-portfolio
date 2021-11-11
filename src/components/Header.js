@@ -2,9 +2,9 @@ import React from "react";
 import { Navbar, NavbarBrand } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { NavItem, NavLink } from "react-bootstrap";
-import dev from '../assets/images/ryanjdev.png';
 import { FaGithubSquare } from 'react-icons/fa';
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import logo from '../assets/images/my-logo.png';
 
 const Header = () => {
   const [expand, updateExpanded] = React.useState(false);
@@ -32,7 +32,9 @@ const Header = () => {
           <img
             className="logo"
             alt="Dev Logo"
-            src={dev}
+            src={logo}
+            width="200"
+            height="90"
           />{' '}
           RyanJ_Dev
         </NavbarBrand>
