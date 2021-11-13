@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import { Drawer } from "@material-ui/core";
 
-import { SidebarNav } from "./SidebarNav";
+import { SidebarNav } from "./components";
 
 const useStyles = makeStyles(theme => ({
     drawer: {

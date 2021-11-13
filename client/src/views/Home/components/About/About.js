@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Grid, Button } from '@material-ui/core';
+import { useMediaQuery, Grid } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 
@@ -35,18 +35,11 @@ const About = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        label="Customization"
-        title="Customize your product"
-        subtitle="We aim to take care of you. Need help with installation, find a bug, or just need a clarifiction about our documentation? We'll be there to lend a helping hand."
+        label="About"
+        title="Ryan J Helm"
+        subtitle="I am a Full Stack Web Developer. I have a MERN stack background but continue to learn languages and programs on both the frontend and backend. I love learning and have a passion for programming."
         align="center"
-        ctaGroup={[
-          <Button variant="contained" color="primary" size="large">
-            Start now
-          </Button>,
-          <Button variant="outlined" color="primary" size="large">
-            Learn more
-          </Button>,
-        ]}
+        
       />
       <Grid container spacing={isMd ? 4 : 2}>
         <Grid item xs={12} sm={6}>

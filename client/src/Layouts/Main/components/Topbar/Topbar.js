@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import Image from 'components/atom';
+import { Image } from 'components/atoms';
 
 const useStyles = makeStyles(theme => ({
     root: {},

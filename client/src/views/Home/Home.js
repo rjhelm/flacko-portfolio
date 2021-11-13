@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { colors, Divider } from "@material-ui/core";
-import { Section } from 'components/organisms'
+import { Section, SectionAlternate } from 'components/organisms'
 import {
     About,
     Hero,
@@ -9,8 +9,8 @@ import {
     Projects
 } from "./components"
 
-import { integrations } from "./data"
-import { About } from "./components/About";
+import { projects } from "./data"
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -46,16 +46,17 @@ const Home = () => {
                 <Section className={classes.sectionNoPaddingTop}>
                     <Hub />
                 </Section>
-                <Divider />
-                <Section>
-                    <Projects data={integrations} />
-                </Section>
-                <Divider />
-                <Section>
-                    <About />
-                </Section>
-                <Divider />
             </div>
+                <Divider />
+                <Section>
+                    <Projects data={projects} />
+                </Section>
+                <Divider />
+                <SectionAlternate>
+                    <About />
+                </SectionAlternate>
+                <Divider />
+            
         </div>
     );
 };

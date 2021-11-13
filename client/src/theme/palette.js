@@ -1,7 +1,7 @@
 const palette = {
     "alternate": {
-        "main": "rgb(247, 249, 250)",
-        "dark": "#e8eaf6",
+        "main": "#dfeaf5",
+        "dark": "#0026ff",
     },
     "cardShadow": "rgba(23, 70, 161, .11)",
     "common": {
@@ -10,16 +10,16 @@ const palette = {
     },
     "type": "light",
     "primary": {
-        "main": "#1976d2",
-        "light": "rgb(71, 145, 219)",
-        "dark": "rgb(17, 82, 147)",
+        "main": "#6a1b9a",
+        "light": "#9c4dcc",
+        "dark": "#38006b",
         "contrastText": "#fff"
     },
     "secondary": {
-        "light": "#ffb74d",
-        "main": "#f9b934",
-        "dark": "#f57c00",
-        "contrastText": "rgba(0, 0, 0, 0.87)"
+        "light": "#8e8e8e",
+        "main": "#616161",
+        "dark": "#373737",
+        "contrastText": "rgba(255, 255, 255, 0.87)"
     },
     "error": {
         "light": "#e57373",
@@ -65,7 +65,7 @@ const palette = {
     "tonalOffset": 0.2,
     "text": {
         "primary": "rgba(0, 0, 0, 0.87)",
-        "secondary": "rgba(0, 0, 0, 0.54)",
+        "secondary": "rgba(255, 255, 255, 0.836);",
         "disabled": "rgba(0, 0, 0, 0.38)",
         "hint": "rgba(0, 0, 0, 0.38)"
     },

@@ -1,10 +1,10 @@
 import React from 'react';
-import { PropTypes } from '@material-ui/core';
+import { PropTypes } from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Button, Typography, IconButton } from '@material-ui/core';
-import { Image } from 'components/atom';
-import { SectionHeader } from 'components/molecule';
+import { Image } from 'components/atoms';
+import { SectionHeader } from 'components/molecules';
 import { GitHub } from '@material-ui/icons';
 
 

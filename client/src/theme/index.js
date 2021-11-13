@@ -1,9 +1,9 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 import palette from './palette';
 
 const theme = responsiveFontSizes(
-    createMuiTheme({
+    createTheme({
         palette,
         layout: {
             contentwidth: 1140,
@@ -18,7 +18,7 @@ const theme = responsiveFontSizes(
         overrides: {
             MuiButton: {
                 containedSecondary: {
-                    color: 'white',
+                    color: 'black',
                 },
             },
         },

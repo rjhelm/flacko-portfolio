@@ -7,7 +7,7 @@ import {
     ListItem,
     Typography,
     ListItemIcon,
-    Button,
+    
 } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 

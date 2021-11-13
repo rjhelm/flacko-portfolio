@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid } from '@material-ui/core';
-import { LearnMoreLink, Image } from 'components/atoms';
+import {  Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { CardBase } from 'components/organisms';
 
@@ -32,13 +32,13 @@ const Projects = props => {
             subtitle="Our mission is to help you to grow your design skills, meet and connect with professional dsigners who share your passions."
             align="left"
             label="100+ Integrations"
-            ctaGroup={[
-              <LearnMoreLink
-                title="See all integrations"
-                href="#"
-                variant="h6"
-              />,
-            ]}
+            // ctaGroup={[
+            //   <LearnMoreLink
+            //     title="See all integrations"
+            //     href="#"
+            //     variant="h6"
+            //   />,
+            // ]}
             disableGutter
           />
         </Grid>
