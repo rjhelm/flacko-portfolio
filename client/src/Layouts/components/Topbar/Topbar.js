@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
     Toolbar,
     Hidden,
@@ -8,7 +8,7 @@ import {
     ListItem,
     Typography,
     IconButton,
-    Button,
+    
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
