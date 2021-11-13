@@ -3,12 +3,14 @@ import { makeStyles } from "@material-ui/core";
 import { colors, Divider } from "@material-ui/core";
 import { Section } from 'components/organisms'
 import {
+    About,
     Hero,
     Hub,
     Projects
 } from "./components"
 
 import { integrations } from "./data"
+import { About } from "./components/About";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -47,6 +49,10 @@ const Home = () => {
                 <Divider />
                 <Section>
                     <Projects data={integrations} />
+                </Section>
+                <Divider />
+                <Section>
+                    <About />
                 </Section>
                 <Divider />
             </div>
