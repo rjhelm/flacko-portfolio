@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
         },
     },
     icon: {
-        fontSize: 24,
+        fontSize: 28,
     },
 }));
 

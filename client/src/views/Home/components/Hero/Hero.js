@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Grid, Button, Typography, IconButton, Avatar } from '@material-ui/core';
+import { useMediaQuery, Grid, Button, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { GitHub } from '@material-ui/icons';
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         boxShadow: '25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2)',
         borderRadius: theme.spacing(2),
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '100%',
+            maxWidth: 500,
         },
     },
 }));
@@ -33,20 +33,16 @@ const Hero = props => {
             <Grid
                 container
                 justify="space-between"
-                spacing={2}
+                spacing={4}
                 direction={isMd ? 'row' : 'column-reverse'}
             >
-
-
-
-
                 <Grid
                     item
                     container
                     alignItems="center"
                     xs={12}
                     md={6}
-                    data-aos="fade-up"
+                    data-aos={'fade-up'}
                 >
                     <SectionHeader
                         title={
@@ -58,14 +54,14 @@ const Hero = props => {
                                 </Typography>
                             </span>
                         }
-                        subtitle=""
+                        subtitle="Passionate about technology and programming. Creative and knowledgable. Eager to learn and grow."
                         ctaGroup={[
-                            <IconButton variant="contained" color="black" size="lg">
-                                <a href="https://github.com/rjhelm" target="_blank" rel="noopener noreferrer">
-                                    <GitHub />   GitHub
+                            <Button variant="outlined" color="primary" size="large">
+                                <a style={{ textDecoration: "none" }} href="https://github.com/rjhelm" target="_blank" rel="noopener noreferrer">
+                                    <GitHub /> GitHub
                                 </a>
-                            </IconButton>,
-                            <Button variant="contained" color="primary" size="lg">
+                            </Button>,
+                            <Button variant="contained" color="primary" size="large">
                                 Contact
                             </Button>,
                         ]}
@@ -73,28 +69,15 @@ const Hero = props => {
                         disableGutter
                         titleVariant="h3"
                     />
-                    <Avatar
-                        circle
-                        maxWidth={isMd ? '100%' : 'none'}
-                        maxHeight={isMd ? '100%' : 'none'}
-
-                    >
-                        <Image
-                            alt="Ryan"
-                            src="/assets/ryanjdev.png"
-                            width="120"
-                            height="120"
-                        />
-                    </Avatar>
-
                 </Grid>
                 <Grid
                     item
                     container
                     justify="flex-start"
+                    alignItems="center"
                     xs={12}
                     md={6}
-                    data-aos="fade-up"
+                    data-aos={'fade-up'}
                 >
                     <Image
                         src="/assets/hero.jpg"
@@ -103,6 +86,8 @@ const Hero = props => {
                         data-aos="flip left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000"
+                        width={595}
+                        height={505}
                     />
                 </Grid>
             </Grid>

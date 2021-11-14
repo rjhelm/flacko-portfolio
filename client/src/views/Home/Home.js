@@ -14,21 +14,21 @@ import { projects } from "./data"
 
 const useStyles = makeStyles(theme => ({
     root: {
-        height: "100%",
-        width: "100%",
+        height: '100%',
+        width: '100%',
     },
     pagePaddingTop: {
         paddingTop: theme.spacing(3),
-        [theme.breakpoints.up("md")]: {
+        [theme.breakpoints.up('md')]: {
             paddingTop: theme.spacing(5),
         },
     },
-    sectionPaddingTop: {
+    sectionNoPaddingTop: {
         paddingTop: 0,
     },
     shape: {
         background: theme.palette.alternate.main,
-        borderBottomRightRadius: "50%",
+        borderBottomRightRadius: '50%',
         borderBottom: `1px solid ${colors.grey[200]}`,
     },
 }));
@@ -42,21 +42,20 @@ const Home = () => {
                 <Section className={classes.pagePaddingTop}>
                     <Hero />
                 </Section>
-                <Divider />
                 <Section className={classes.sectionNoPaddingTop}>
                     <Hub />
                 </Section>
             </div>
-                <Divider />
-                <Section>
-                    <Projects data={projects} />
-                </Section>
-                <Divider />
-                <SectionAlternate>
-                    <About />
-                </SectionAlternate>
-                <Divider />
-            
+            <Divider />
+            <Section>
+                <Projects data={projects} />
+            </Section>
+            <Divider />
+            <SectionAlternate>
+                <About />
+            </SectionAlternate>
+            <Divider />
+
         </div>
     );
 };

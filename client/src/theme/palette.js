@@ -75,7 +75,7 @@ const palette = {
         "default": "#fff",
         "level2": "#f5f5f5",
         "level1": "#fff",
-        "footer": "#373737",
+        "footer": "#fff",
     },
     "action": {
         "active": "rgba(0, 0, 0, 0.54)",

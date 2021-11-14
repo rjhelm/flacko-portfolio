@@ -29,7 +29,7 @@ const Main = props => {
         setOpenSidebar(true);
     };
 
-    const open = isMd ? openSidebar : false;
+    const open = isMd ? false : openSidebar;
 
     return (
         <div

@@ -76,7 +76,7 @@ const SectionHeader = props => {
         <Grid
           item
           container
-          justify={justifyGrid}
+          justifyContent={justifyGrid}
           xs={12}
           className="section-header__overline-wrapper"
         >

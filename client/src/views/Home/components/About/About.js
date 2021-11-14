@@ -55,8 +55,8 @@ const About = props => {
         <Grid item xs={12} sm={6}>
           <Grid
             container
-            justif="center"
-            alignItems="center"
+            justifyContent="center"
+            align="center"
             className={classes.lastGrid}
           >
             <Image

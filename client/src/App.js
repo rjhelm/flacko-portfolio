@@ -4,10 +4,8 @@ import { createBrowserHistory } from 'history';
 import { ThemeProvider } from '@material-ui/styles';
 import { Paper, CssBaseline } from '@material-ui/core';
 import AOS from 'aos';
-
 import theme from './theme';
 import Routes from './Routes';
-
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import 'aos/dist/aos.css';
 

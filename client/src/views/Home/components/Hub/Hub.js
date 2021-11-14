@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
-import { SectionHeader, CountUpNumber } from 'components/molecules';
+import { SectionHeader } from 'components/molecules';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -43,7 +43,7 @@ const Features = props => {
           data-aos="fade-up"
         >
           <Image
-            src="/images/illustrations/dashboard-screenshot1.jpg"
+            src="/assets/hub.png"
             alt="..."
             className={classes.coverImage}
             data-aos="flip-left"
@@ -82,27 +82,14 @@ const Features = props => {
             <Grid item xs={12}>
               <div className={classes.placementGrid}>
                 <div>
-                  <CountUpNumber
-                    end={400}
-                    label="Components"
-                    textColor="primary"
-                    suffix="+"
-                  />
+                  
                 </div>
                 <div className={classes.placementGridItemMiddle}>
-                  <CountUpNumber
-                    end={100}
-                    label="Satisfaction"
-                    textColor="primary"
-                    suffix="%"
-                  />
+                  
                 </div>
                 <div>
-                  <CountUpNumber
-                    end={5.0}
-                    label="Review Score"
-                    textColor="primary"
-                  />
+                  
+                  
                 </div>
               </div>
             </Grid>
