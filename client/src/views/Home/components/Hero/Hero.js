@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Grid, Button, Typography, IconButton } from '@material-ui/core';
+import { useMediaQuery, Grid, Button, Typography, IconButton, Avatar } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { GitHub } from '@material-ui/icons';
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         boxShadow: '25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2)',
         borderRadius: theme.spacing(2),
         [theme.breakpoints.down('sm')]: {
-            maxWidth: 500,
+            maxWidth: '100%',
         },
     },
 }));
@@ -30,12 +30,16 @@ const Hero = props => {
 
     return (
         <div className={clsx(classes.root, className)} {...rest}>
-            <Grid 
+            <Grid
                 container
                 justify="space-between"
-                spacing={4}
+                spacing={2}
                 direction={isMd ? 'row' : 'column-reverse'}
             >
+
+
+
+
                 <Grid
                     item
                     container
@@ -54,12 +58,14 @@ const Hero = props => {
                                 </Typography>
                             </span>
                         }
-                        subtitle="I'm a full stack developer with a passion for building beautiful, intuitive, and user-friendly applications."
+                        subtitle=""
                         ctaGroup={[
-                            <IconButton variant="contained" color="primary" size="large">
-                                <GitHub />   GitHub
+                            <IconButton variant="contained" color="black" size="lg">
+                                <a href="https://github.com/rjhelm" target="_blank" rel="noopener noreferrer">
+                                    <GitHub />   GitHub
+                                </a>
                             </IconButton>,
-                            <Button variant="contained" color="primary" size="large">
+                            <Button variant="contained" color="primary" size="lg">
                                 Contact
                             </Button>,
                         ]}
@@ -67,6 +73,20 @@ const Hero = props => {
                         disableGutter
                         titleVariant="h3"
                     />
+                    <Avatar
+                        circle
+                        maxWidth={isMd ? '100%' : 'none'}
+                        maxHeight={isMd ? '100%' : 'none'}
+
+                    >
+                        <Image
+                            alt="Ryan"
+                            src="/assets/ryanjdev.png"
+                            width="120"
+                            height="120"
+                        />
+                    </Avatar>
+
                 </Grid>
                 <Grid
                     item
@@ -77,7 +97,7 @@ const Hero = props => {
                     data-aos="fade-up"
                 >
                     <Image
-                        src={""}
+                        src="/assets/hero.jpg"
                         alt="Hero Image"
                         className={classes.image}
                         data-aos="flip left"

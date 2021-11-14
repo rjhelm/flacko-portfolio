@@ -9,7 +9,7 @@ import { Image } from 'components/atoms';
 const useStyles = makeStyles(theme => ({
   root: {
     boxShadow: 'none',
-    background: theme.palette.white,
+    background: theme.palette.primary.main,
     borderBottom: `1px solid ${colors.grey[200]}`,
   },
   toolbar: {
@@ -40,11 +40,11 @@ const Topbar = props => {
   return (
     <Toolbar className={clsx(classes.toolbar, className)} {...rest}>
       <div className={classes.logoContainer}>
-        <a href="/" title="thefront">
+        <a href="/" title="RyanJ_Dev">
           <Image
             className={classes.logoImage}
-            src="/images/logos/logo.svg"
-            alt="thefront"
+            src="/assets/logo.png"
+            alt="RyanJ_Dev"
             lazy={false}
           />
         </a>

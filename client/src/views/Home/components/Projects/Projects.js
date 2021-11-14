@@ -10,7 +10,8 @@ import { CardBase } from 'components/organisms';
 const useStyles = makeStyles(theme => ({
   root: {},
   logo: {
-    maxWidth: 50,
+    maxWidth: '100%',
+    maxHeight: '100%',
   },
 }));
 

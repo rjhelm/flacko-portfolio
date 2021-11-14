@@ -38,7 +38,7 @@ const typography = {
         lineHeight: 1.45,
     },
     subtitle1: {
-        color: palette.text.primary,
+        color: palette.text.secondary,
         fontSize: '16px',
         lineHeight: 1.4,
     },

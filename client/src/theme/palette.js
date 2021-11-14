@@ -1,6 +1,6 @@
 const palette = {
     "alternate": {
-        "main": "#dfeaf5",
+        "main": "rgb(247, 249, 250)",
         "dark": "#0026ff",
     },
     "cardShadow": "rgba(23, 70, 161, .11)",
@@ -64,8 +64,8 @@ const palette = {
     "contrastThreshold": 3,
     "tonalOffset": 0.2,
     "text": {
-        "primary": "rgba(0, 0, 0, 0.87)",
-        "secondary": "rgba(255, 255, 255, 0.836);",
+        "primary": "#373737",
+        "secondary": "#2c4054;",
         "disabled": "rgba(0, 0, 0, 0.38)",
         "hint": "rgba(0, 0, 0, 0.38)"
     },
@@ -75,7 +75,7 @@ const palette = {
         "default": "#fff",
         "level2": "#f5f5f5",
         "level1": "#fff",
-        "footer": "#1b1642",
+        "footer": "#373737",
     },
     "action": {
         "active": "rgba(0, 0, 0, 0.54)",

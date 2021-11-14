@@ -1,14 +1,15 @@
 import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
-
+import typography from './typography';
 import palette from './palette';
 
 const theme = responsiveFontSizes(
     createTheme({
+        typography,
         palette,
         layout: {
             contentwidth: 1140,
         },
-        typography: {
+        Typography: {
             fontFamily: 'Leto',
         },
         zIndex: {

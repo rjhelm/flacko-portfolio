@@ -36,7 +36,7 @@ const Features = props => {
         <Grid
           item
           container
-          justify="flex-start"
+          justifyContent="center"
           alignItems="center"
           xs={12}
           md={6}
@@ -54,7 +54,7 @@ const Features = props => {
         <Grid
           item
           container
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           xs={12}
           md={6}
@@ -65,14 +65,14 @@ const Features = props => {
               <SectionHeader
                 title={
                   <span>
-                    Use flexible components.
+                    Creative and Intuitive
                     <br />
                     <Typography component="span" variant="inherit" color="primary">
-                      to build an app quickly.
+                      M.E.R.N. Stack Focused Development
                     </Typography>
                   </span>
                 }
-                subtitle="theFront styles and extends Material-UI components, but also included brand new landing page focused components."
+                subtitle="Looking to implement these skills and learn more."
                 align="left"
                 fadeUp
                 disableGutter

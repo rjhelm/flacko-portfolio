@@ -28,8 +28,8 @@ const useStyles = makeStyles(theme => ({
         paddingTop: 0,
     },
     logoContainer: {
-        width: "120",
-        heioght: "32",
+        width: 150,
+        height: 120
     },
     logoImage: {
         width: "100%",
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     socialIcon: {
         padding: 0,
         marginRight: theme.spacing(1),
-        color: "rgba(255, 255, 255, .6)",
+        color: "#9117b3",
         '&:hover': {
             background: "transparent",
         },
@@ -61,11 +61,11 @@ const Footer = props => {
                 <List disablePadding>
                     <ListItem disableGutters className={classes.logoContainerItem}>
                         <div className={classes.logoContainer}>
-                            <a href="/" title="thefront">
+                            <a href="/" title="RyanJ_Dev">
                                 <Image
                                     className={classes.logoImage}
-                                    src={""}
-                                    alt="thefront"
+                                    src="/assets/dev-logo.png"
+                                    alt="RyanJ_Dev"
                                     lazy={false}
                                 />
                             </a>

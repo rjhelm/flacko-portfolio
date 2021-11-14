@@ -50,16 +50,16 @@ const useStyles = makeStyles(theme => ({
         },
     },
     logoContainer: {
-        width: 100,
-        height: 28,
+        width: 140,
+        height: 160,
         [theme.breakpoints.up('md')]: {
             width: 120,
-            height: 32,
+            height: 112,
         },
     },
     logoImage: {
-        width: '100%',
-        height: '100%',
+        width: 150,
+        height: 120,
     },
 }));
 
@@ -70,11 +70,11 @@ const Topbar = props => {
     return (
         <Toolbar disableGutters className={classes.toolbar}{...rest}>
             <div className={classes.logoContainer}>
-                <a href="/" title="thefront">
+                <a href="/" title="RyanJ_Dev">
                     <Image
                         className={classes.logoImage}
-                        src={""}
-                        alt="thefront"
+                        src="/assets/dev-logo.png"
+                        alt="RyanJ_Dev"
                         lazy={false}
                     />
                 </a>
@@ -99,7 +99,7 @@ const Topbar = props => {
                             color="textSecondary"
                             className={classes.listItemText}
                             component="a"
-                            href="/home"
+                            href="/about"
                         >
                             About
                         </Typography>
@@ -110,7 +110,7 @@ const Topbar = props => {
                             color="textSecondary"
                             className={classes.listItemText}
                             component="a"
-                            href="/home"
+                            href="/portfolio"
                         >
                             Portfolio
                         </Typography>
@@ -121,7 +121,7 @@ const Topbar = props => {
                             color="textSecondary"
                             className={classes.listItemText}
                             component="a"
-                            href="/home"
+                            href="/Resume"
                         >
                             Resume
                         </Typography>
