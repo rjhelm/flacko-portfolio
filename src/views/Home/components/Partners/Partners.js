@@ -28,13 +28,22 @@ const Partners = props => {
       <Grid container spacing={isMd ? 4 : 2}>
         <Grid item xs={12} md={6} data-aos="fade-up">
           <SectionHeader
-            title="We love to explore new ways to engage with brands and reach"
-            subtitle="Our mission is to help you to grow your design skills, meet and connect with professional dsigners who share your passions."
-            subtitle2="We are a group of designers, developers, and entrepreneurs who believe in the power of design."
+            title="My Stack"
+            subtitle="I have a broad range of technology experience and I am always looking to improve on this foundation.
+            I look to continue adding to this stack as I learn and grow as a developer."
+            subtitle2=""
             align="left"
             label="About Me"
             disableGutter
           />
+          <ol>
+            <li>
+              <strong>Front End:</strong> React, Angular, Vue, HTML, CSS, SASS,
+            </li>
+            <li>
+              <strong>Back End:</strong> Node, Express, Python, Django, SQL,
+            </li>
+          </ol>
         </Grid>
         <Grid item xs={12} md={6} data-aos="fade-up">
           <Grid container spacing={2}>

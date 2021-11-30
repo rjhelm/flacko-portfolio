@@ -78,7 +78,7 @@ const Hero = props => {
           data-aos={'fade-up'}
         >
           <Image
-            src="/images/ryanjdev.png"
+            src="/images/hero2.png"
             alt="RyanJ_Dev"
             className={classes.image}
             data-aos="flip-left"
