@@ -52,7 +52,7 @@ const Customization = props => {
         <Grid item xs={12} sm={6}>
           <Grid container justif="center" alignItems="center">
             <Image
-              src="/images/illustrations/dashboard-screenshot.jpg"
+              src="/images/hero.jpg"
               alt="TheFront Company"
               className={classes.image}
               data-aos="fade-up"
@@ -67,7 +67,7 @@ const Customization = props => {
             className={classes.lastGrid}
           >
             <Image
-              src="/images/illustrations/dashboard-screenshot1.jpg"
+              src="/images/certification.png"
               alt="TheFront Company"
               className={classes.image}
               data-aos="fade-up"

@@ -65,10 +65,10 @@ const Features = props => {
               <SectionHeader
                 title={
                   <span>
-                    Creative Frontend
+                    MERN Stack Focused
                     <br />
                     <Typography component="span" variant="inherit" color="primary">
-                      Reliable Backend
+                    Eager to learn new technologies
                     </Typography>
                   </span>
                 }

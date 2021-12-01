@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const SignupSimple = () => {
+const Contact = () => {
   const classes = useStyles();
 
   return (
@@ -43,4 +43,4 @@ const SignupSimple = () => {
   );
 };
 
-export default SignupSimple;
+export default Contact;
