@@ -19,11 +19,11 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(0, 2),
   },
   logoContainer: {
-    width: 100,
-    height: 28,
+    width: 125,
+    height: 175,
     [theme.breakpoints.up('md')]: {
       width: 120,
-      height: 32,
+      height: 120,
     },
   },
   logoImage: {
@@ -43,8 +43,8 @@ const Topbar = props => {
         <a href="/" title="thefront">
           <Image
             className={classes.logoImage}
-            src="/images/logos/logo.svg"
-            alt="thefront"
+            src="/images/dev-logo.png"
+            alt="RyanJ_Dev"
             lazy={false}
           />
         </a>

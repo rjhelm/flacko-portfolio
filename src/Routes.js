@@ -24,7 +24,7 @@ const Routes = () => {
         component={ContactView}
         exact
         layout={MainLayout}
-        path="/signup-simple"
+        path="/contact"
       />
       <RouteWithLayout
         component={NotFoundView}

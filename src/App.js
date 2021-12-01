@@ -9,9 +9,6 @@ import theme from './theme';
 import Routes from './Routes';
 
 
-import 'react-lazy-load-image-component/src/effects/opacity.css';
-import 'aos/dist/aos.css';
-
 const browserHistory = createBrowserHistory();
 
 browserHistory.listen(location => {
