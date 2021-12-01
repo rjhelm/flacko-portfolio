@@ -6,7 +6,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Typography, Button } from '@material-ui/core';
 import { Icon, LearnMoreLink } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
-import { ProjectCard } from 'components/organisms';
+import { CardPricingStandard } from 'components/organisms';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -36,7 +36,7 @@ const Pricings = props => {
       />
       <Grid container spacing={isMd ? 4 : 2}>
         <Grid item xs={12} md={6} data-aos="fade-up">
-          <ProjectCard
+          <CardPricingStandard
             variant="outlined"
             withShadow
             liftUp
@@ -80,7 +80,7 @@ const Pricings = props => {
           />
         </Grid>
         <Grid item xs={12} md={6} data-aos="fade-up">
-          <ProjectCard
+          <CardPricingStandard
             variant="outlined"
             title="Standard License"
             liftUp
