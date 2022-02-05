@@ -1,14 +1,13 @@
 import React from 'react';
-import Container from 'react-bootstrap/esm/Container';
 
 const Footer = () => {
     return (
         <footer>
-            <Container>
+            <div>
                 <div>
                     <p>RyanJDev</p>
                 </div>
-            </Container>
+            </div>
         </footer>
   )
 }
